@@ -30,3 +30,6 @@ console.log("Total daily visitors:", park1.calculateDailyVisitors());
 console.log("Total annual visitors:", park1.calculateAnnualVisitors());
 
 console.log("Total annual revenue:", park1.calculateAnnualRevenue());
+
+park1.removeBySpecies("Velociraptor"); 
+console.log("After removing by species:", park1);

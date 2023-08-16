@@ -49,7 +49,15 @@ calculateAnnualRevenue() {
   return annualVisitors * this.ticketPrice;
 }
 
+removeBySpecies = function (species) {
+  const newDinosaurs = [];
 
+  for (const dinosaur of this.dinosaurs) {
+    if (dinosaur.species !== species) {
+      newDinosaurs.push(dinosaur);
+    }
+  }
+}
 }
 
 module.exports = Park;
